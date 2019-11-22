@@ -37,7 +37,7 @@ class HomeController extends Controller
 
   public function CadastrarFormulário(Request $request)
   {
-    dd($request);
+    dd($request->nome);
   }
 }
 
