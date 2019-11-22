@@ -24,6 +24,21 @@ class HomeController extends Controller
     return view ('cidades',['listaCidades'=>$listaCidades]);
 
   }
+
+  public function request(Request $request,$id)
+  {
+    dd($id);
+  }
+
+  public function ExibirFormulário()
+  {
+    return view('formulario');
+  }
+
+  public function CadastrarFormulário(Request $request)
+  {
+    dd($request);
+  }
 }
 
  ?>
